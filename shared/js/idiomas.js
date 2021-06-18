@@ -35,6 +35,6 @@ var logoSales = $('.logoSales')
 btnGroup.on('click', function( e ) {
 
   loadIdiomas(e.target.id)
-  $("#root").load('/shared/views/Modelo.html');
+  $("#root").load('shared/views/Modelo.html');
 
 })
