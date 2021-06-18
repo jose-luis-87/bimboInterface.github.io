@@ -634,7 +634,7 @@ function AnimacionAparecer(_mesh, habilitarGiro = false) {
     
     setTimeout(()=>{
         $("#games").fadeIn()
-        $("#games").load('/shared/views/games.html');
+        $("#games").load('shared/views/games.html');
         //desactivar mision
         SinMision();
     }, 3000)

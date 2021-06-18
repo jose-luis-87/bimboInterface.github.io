@@ -1,4 +1,4 @@
-var dataGame = '{"productos":[{"url":"./shared/img/game6/pan1.svg","deg":"0","tipo":"pan1"},{"url":"./shared/img/game6/pan2.svg","deg":"0","tipo":"pan2"},{"url":"./shared/img/game6/pan3.svg","deg":"0","tipo":"pan3"}]}';
+var dataGame = '{"productos":[{"url":"shared/img/game6/pan1.svg","deg":"0","tipo":"pan1"},{"url":"shared/img/game6/pan2.svg","deg":"0","tipo":"pan2"},{"url":"shared/img/game6/pan3.svg","deg":"0","tipo":"pan3"}]}';
 
 var interval = null;
 var PointsToWin = 0;

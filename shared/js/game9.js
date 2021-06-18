@@ -1,4 +1,4 @@
-var data = '{"elements":[{"scene":"./shared/img/game9/Escenario1.jpg","rack":"./shared/img/game9/TortillinaRack.svg","rackSup":"./shared/img/game9/tortillinaCenital.svg","class":"tortillina"},{"scene":"./shared/img/game9/Escenario2.jpg","rack":"./shared/img/game9/BarcelRack.svg","rackSup":"./shared/img/game9/barcelCenital.svg","class":"barcel"},{"scene":"./shared/img/game9/Escenario3.jpg","rack":"./shared/img/game9/MarinelaRack.svg","rackSup":"./shared/img/game9/marinelaCenital.svg","class":"marinela"}]}';
+var data = '{"elements":[{"scene":"shared/img/game9/Escenario1.jpg","rack":"shared/img/game9/TortillinaRack.svg","rackSup":"shared/img/game9/tortillinaCenital.svg","class":"tortillina"},{"scene":"shared/img/game9/Escenario2.jpg","rack":"shared/img/game9/BarcelRack.svg","rackSup":"shared/img/game9/barcelCenital.svg","class":"barcel"},{"scene":"shared/img/game9/Escenario3.jpg","rack":"shared/img/game9/MarinelaRack.svg","rackSup":"shared/img/game9/marinelaCenital.svg","class":"marinela"}]}';
 var interval = null;
 var PointsToWin = 0;
 var Scenes = [];
@@ -54,7 +54,7 @@ function initDraggables() {
             $(_drag).css("opacity","0.5");
             $(ui.helper).remove();
 
-            $(_drop).find("img")[0].src = "./shared/img/game9/" + drag_correct + "Cenital.svg";
+            $(_drop).find("img")[0].src = "shared/img/game9/" + drag_correct + "Cenital.svg";
 
             checkDrop(drop_correct, drag_correct, _drop)
         }
