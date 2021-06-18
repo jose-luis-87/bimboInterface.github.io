@@ -5,7 +5,7 @@ var ObjAudios={};
 var LanSelect = "es";
 var currentMission =''
 function loadData(){
-  let urlJson = 'shared/js/json/DataGames.json'
+  let urlJson = './shared/js/json/DataGames.json'
   $.ajax({
     url: urlJson,
     data: {},
@@ -193,7 +193,7 @@ function YouLose(callback,live=null){
           $('#games').empty()
           $('.wrapperModales').empty()
           $('.wrapperModales').fadeIn()
-          $('.wrapperModales').load('shared/views/Misiones.html')
+          $('.wrapperModales').load('./shared/views/Misiones.html')
       });
       
   }
@@ -202,7 +202,7 @@ function YouLose(callback,live=null){
 function ClaimPrize(){
   $(".btnPrize").addClass('active');
   let prize = Math.floor((Math.random() * 2) + 1);
-  $(".prize>img").attr('src','shared/img/ui/prize'+prize+'.svg');
+  $(".prize>img").attr('src','./shared/img/ui/prize'+prize+'.svg');
   $(".btnPrize").on('click',()=>{
     //Todo go to prize window
     console.log("go to Prize Window")
@@ -234,7 +234,7 @@ function ClaimPrize(){
       setTimeout(()=>{
         $('.wrapperModales').empty()
         $('.wrapperModales').fadeIn()
-        $('.wrapperModales').load('shared/views/Misiones.html')
+        $('.wrapperModales').load('./shared/views/Misiones.html')
       },1000)
       
     }

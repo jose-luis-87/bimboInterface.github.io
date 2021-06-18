@@ -1,4 +1,4 @@
-var data = '{"elements":[{"scene":"shared/img/game9/Escenario1.jpg","rack":"shared/img/game9/TortillinaRack.svg","rackSup":"shared/img/game9/tortillinaCenital.svg","class":"tortillina"},{"scene":"shared/img/game9/Escenario2.jpg","rack":"shared/img/game9/BarcelRack.svg","rackSup":"shared/img/game9/barcelCenital.svg","class":"barcel"},{"scene":"shared/img/game9/Escenario3.jpg","rack":"shared/img/game9/MarinelaRack.svg","rackSup":"shared/img/game9/marinelaCenital.svg","class":"marinela"}]}';
+var data = '{"elements":[{"scene":"./shared/img/game9/Escenario1.jpg","rack":"./shared/img/game9/TortillinaRack.svg","rackSup":"./shared/img/game9/tortillinaCenital.svg","class":"tortillina"},{"scene":"./shared/img/game9/Escenario2.jpg","rack":"./shared/img/game9/BarcelRack.svg","rackSup":"./shared/img/game9/barcelCenital.svg","class":"barcel"},{"scene":"./shared/img/game9/Escenario3.jpg","rack":"./shared/img/game9/MarinelaRack.svg","rackSup":"./shared/img/game9/marinelaCenital.svg","class":"marinela"}]}';
 var interval = null;
 var PointsToWin = 0;
 var Scenes = [];
@@ -16,9 +16,9 @@ function setScene() {
         var clone = '<div data-correct="' + _scene.class + '" class="commondrag"><img src="' + _scene.rack + '" alt="' + _scene.class + '_head"></div>';
         $(clone).appendTo(".wrapperDraggable");
         Scenes.shift();
-        let dropZones = '<div data-correct="barcel" class="dropZone dropZone1"><div><img src="shared/img/game9/barcelCenital.svg" /></div></div>' +
-            '<div data-correct="tortillina" class="dropZone dropZone2"><div><img src="shared/img/game9/tortillinaCenital.svg" /></div></div>' +
-            '<div data-correct="marinela" class="dropZone dropZone3"><div><img src="shared/img/game9/marinelaCenital.svg" /></div></div>';
+        let dropZones = '<div data-correct="barcel" class="dropZone dropZone1"><div><img src="./shared/img/game9/barcelCenital.svg" /></div></div>' +
+            '<div data-correct="tortillina" class="dropZone dropZone2"><div><img src="./shared/img/game9/tortillinaCenital.svg" /></div></div>' +
+            '<div data-correct="marinela" class="dropZone dropZone3"><div><img src="./shared/img/game9/marinelaCenital.svg" /></div></div>';
         $(dropZones).appendTo(".wrapperDropsZone");
         initDraggables();
 
@@ -54,7 +54,7 @@ function initDraggables() {
             $(_drag).css("opacity","0.5");
             $(ui.helper).remove();
 
-            $(_drop).find("img")[0].src = "shared/img/game9/" + drag_correct + "Cenital.svg";
+            $(_drop).find("img")[0].src = "./shared/img/game9/" + drag_correct + "Cenital.svg";
 
             checkDrop(drop_correct, drag_correct, _drop)
         }
@@ -78,8 +78,8 @@ function checkDrop(a, b, drop) {
             checkwin();
         }, 1500)
     } else {
-        let tacheL = '<div class="tacheL"><img src="shared/img/game9/tache.svg"/></div>';
-        let tacheR = '<div class="tacheR"><img src="shared/img/game9/tache.svg"/></div>';
+        let tacheL = '<div class="tacheL"><img src="./shared/img/game9/tache.svg"/></div>';
+        let tacheR = '<div class="tacheR"><img src="./shared/img/game9/tache.svg"/></div>';
         $(drop).addClass("complete");
         $(drop).addClass("lose");
         $(tacheL).prependTo($(drop));

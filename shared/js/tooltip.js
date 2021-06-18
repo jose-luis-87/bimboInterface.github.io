@@ -114,7 +114,7 @@ function openMisiones() {
   var uiUser = document.querySelector('.uiUser')
   var overlay = document.querySelector('.overlay')
   $('.wrapperModales').empty()
-  $('.wrapperModales').load('shared/views/Misiones.html')
+  $('.wrapperModales').load('./shared/views/Misiones.html')
   uiUser.style.opacity = 1
   uiUser.style.display = 'block'
   

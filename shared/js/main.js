@@ -100,5 +100,5 @@ window.addEventListener('resize', function () {
 
 $(document).ready(function () {
     $("#games").fadeOut();
-    $("#root").load('shared/views/Idiomas.html');
+    $("#root").load('./shared/views/Idiomas.html');
   });

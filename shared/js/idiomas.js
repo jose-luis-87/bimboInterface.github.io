@@ -2,7 +2,7 @@ var ObjLan = {};
 var misionesRally = []
 
 function loadIdiomas(id) {
-  let urlJson = 'shared/js/json/idioma.json'
+  let urlJson = './shared/js/json/idioma.json'
   $.ajax({
     url: urlJson,
     data: {},
@@ -35,6 +35,6 @@ var logoSales = $('.logoSales')
 btnGroup.on('click', function( e ) {
 
   loadIdiomas(e.target.id)
-  $("#root").load('shared/views/Modelo.html');
+  $("#root").load('./shared/views/Modelo.html');
 
 })

@@ -1,4 +1,4 @@
-var data = '{"elements":[{"rack":"shared/img/game11/hallow_rack.svg","head":"shared/img/game11/hallow_head.svg","person":"shared/img/game11/hallow_body.svg","data":"hallow"},{"rack":"shared/img/game11/beach_rack.svg","head":"shared/img/game11/beach_head.svg","person":"shared/img/game11/beach_body.svg","data":"beach"},{"rack":"shared/img/game11/child_rack.svg","head":"shared/img/game11/child_head.svg","person":"shared/img/game11/child_body.svg","data":"child"},{"rack":"shared/img/game11/soccer_rack.svg","head":"shared/img/game11/soccer_head.svg","person":"shared/img/game11/soccer_body.svg","data":"soccer"},{"rack":"shared/img/game11/xmas_rack.svg","head":"shared/img/game11/xmas_head.svg","person":"shared/img/game11/xmas_body.svg","data":"xmas"}]}';
+var data = '{"elements":[{"rack":"./shared/img/game11/hallow_rack.svg","head":"./shared/img/game11/hallow_head.svg","person":"./shared/img/game11/hallow_body.svg","data":"hallow"},{"rack":"./shared/img/game11/beach_rack.svg","head":"./shared/img/game11/beach_head.svg","person":"./shared/img/game11/beach_body.svg","data":"beach"},{"rack":"./shared/img/game11/child_rack.svg","head":"./shared/img/game11/child_head.svg","person":"./shared/img/game11/child_body.svg","data":"child"},{"rack":"./shared/img/game11/soccer_rack.svg","head":"./shared/img/game11/soccer_head.svg","person":"./shared/img/game11/soccer_body.svg","data":"soccer"},{"rack":"./shared/img/game11/xmas_rack.svg","head":"./shared/img/game11/xmas_head.svg","person":"./shared/img/game11/xmas_body.svg","data":"xmas"}]}';
 var arrayHeads = [];
 var arrayRacks = [];
 var correct = 0;
@@ -68,7 +68,7 @@ function initDraggable(){
             $(_drag).css("opacity","0.5");
             $(_drop).find(".person").removeClass("person_"+last);
             $(_drop).find(".person").addClass("person_"+drag_correct);
-            $(_drop).find(".person")[0].src = "shared/img/game11/"+drag_correct+"_body.svg";
+            $(_drop).find(".person")[0].src = "./shared/img/game11/"+drag_correct+"_body.svg";
             $(_drop).find(".person").fadeIn();
             
             $(_drop).data({"last":drag_correct})

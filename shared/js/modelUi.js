@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     if (e.target.id === 'btnHelp') {
       $('.wrapperModales').fadeIn()
-      $('.wrapperModales').load('shared/views/Tooltip.html')
+      $('.wrapperModales').load('./shared/views/Tooltip.html')
       console.log('btnHelp');
     }
 
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
       countClick();
 
-      $('.optionMenu').load('shared/views/Guardar.html')
+      $('.optionMenu').load('./shared/views/Guardar.html')
       morphing.restart()
       console.log('btnSave');
     }
@@ -74,7 +74,7 @@ $(document).ready(function () {
         morphing.restart()
       }
 
-      $('.optionMenu').load('shared/views/stats.html')
+      $('.optionMenu').load('./shared/views/stats.html')
       countClick();
       console.log('btnStats');
     }
@@ -167,6 +167,6 @@ function closeWelcome() {
   $('overlay').css('background-color', '#000')
   //overlay.style.display = 'block'
   /* modales.removeChild(logoWowBem) */
-  $('.wrapperModales').load('shared/views/Tooltip.html')
+  $('.wrapperModales').load('./shared/views/Tooltip.html')
 }
 

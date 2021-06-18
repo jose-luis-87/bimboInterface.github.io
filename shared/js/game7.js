@@ -1,4 +1,4 @@
-var data = '[{"elements":[{ "recurso":"shared/img/game7/quesos.svg","drop":".shared/img/game7/quesos.svg","data":"quesos"},{"recurso":".shared/img/game7/burgers.svg","drop":".shared/img/game7/burgers.svg","data": "burgers"},{"recurso":".shared/img/game7/jalea.svg","drop":".shared/img/game7/jalea.svg","data": "jalea"},{"recurso": ".shared/img/game7/Soda.svg","drop": ".shared/img/game7/Soda.svg","data": "soda"}]},{"frames":[{"ref":".shared/img/game7/toast.svg","data":"jalea"},{"ref":".shared/img/game7/papas.svg","data":"soda"},{"ref":".shared/img/game7/buns.svg","data":"burgers"}]}]';
+var data = '[{"elements":[{ "recurso":"./shared/img/game7/quesos.svg","drop":"../shared/img/game7/quesos.svg","data":"quesos"},{"recurso":"../shared/img/game7/burgers.svg","drop":"../shared/img/game7/burgers.svg","data": "burgers"},{"recurso":"../shared/img/game7/jalea.svg","drop":"../shared/img/game7/jalea.svg","data": "jalea"},{"recurso": "../shared/img/game7/Soda.svg","drop": "../shared/img/game7/Soda.svg","data": "soda"}]},{"frames":[{"ref":"../shared/img/game7/toast.svg","data":"jalea"},{"ref":"../shared/img/game7/papas.svg","data":"soda"},{"ref":"../shared/img/game7/buns.svg","data":"burgers"}]}]';
 var arrayDrags = [];
 var arryDrops = [];
 var arrayFrames = []
@@ -61,7 +61,7 @@ function initDraggable(){
             let drag_correct = $(ui.draggable).data().correct;
             let last = $(this).data().last;
             var img = $('<img class="bgDrop" />'); 
-            var imgSrc = "shared/img/game7/"+drag_correct+".svg"
+            var imgSrc = "./shared/img/game7/"+drag_correct+".svg"
             
             $(".recursos").find(`[data-correct='${last}']`).removeAttr("style");
             $(".recursos").find(`[data-correct='${last}']`).draggable('enable');
@@ -97,10 +97,10 @@ function checkDrop(){
     let drop2 = $(drops[1]).data().correct
     let drop3 = $(drops[2]).data().correct
     let win = $(".win").length
-    let correctArrow = $('<img src=".shared/img/game7/correcto.svg" class="correct" />')
-    let correctRef = $('<img src=".shared/img/game7/correcto.svg" class="correct" />')
-    let badArrow = $('<img src=".shared/img/game7/incorrecto.svg" class="incorrect" />')
-    let badRef = $('<img src=".shared/img/game7/incorrecto.svg" class="incorrect" />')
+    let correctArrow = $('<img src="../shared/img/game7/correcto.svg" class="correct" />')
+    let correctRef = $('<img src="../shared/img/game7/correcto.svg" class="correct" />')
+    let badArrow = $('<img src="../shared/img/game7/incorrecto.svg" class="incorrect" />')
+    let badRef = $('<img src="../shared/img/game7/incorrecto.svg" class="incorrect" />')
 
     if(frame1 === drop1){
         $(drops[0]).droppable('disable');
@@ -134,7 +134,7 @@ function checkResult (drop, result){
     let dropData = $(drop).data().correct
     let results = $(".results")
     let imgResult = $('<img />');
-    let srcResult = "shared/img/game7/feedback"+dropData+".svg" 
+    let srcResult = "./shared/img/game7/feedback"+dropData+".svg" 
     
     if( $(drop).hasClass("win")){
         console.log('false');

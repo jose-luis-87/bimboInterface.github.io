@@ -1,4 +1,4 @@
-var data = '{"productos":[{"number":5,"url":"shared/img/game4/bimbollos.svg","data":"bimbollos"},{"number":5,"url":"shared/img/game4/mediasnoches.svg","data":"mediasnoches"},{"number":2,"url":"shared/img/game4/panguinda.svg","data":"pan1"},{"number":2,"url":"shared/img/game4/panverde.svg","data":"pan2"},{"number":2,"url":"shared/img/game4/panrojo.svg","data":"pan3"}]}';
+var data = '{"productos":[{"number":5,"url":"./shared/img/game4/bimbollos.svg","data":"bimbollos"},{"number":5,"url":"./shared/img/game4/mediasnoches.svg","data":"mediasnoches"},{"number":2,"url":"./shared/img/game4/panguinda.svg","data":"pan1"},{"number":2,"url":"./shared/img/game4/panverde.svg","data":"pan2"},{"number":2,"url":"./shared/img/game4/panrojo.svg","data":"pan3"}]}';
 
 var toWin = [];
 var toWinIndex = 3;

@@ -99,7 +99,7 @@
   background-position: center; */
   width: 100%;
   position: relative;
-  background-image: url('shared/img/ui/canasta-bn.png');
+  background-image: url('./shared/img/ui/canasta-bn.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

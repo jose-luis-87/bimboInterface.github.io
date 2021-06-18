@@ -47,7 +47,7 @@ $(document).ready(function () {
     $('#btnSig').text(LanObj.ui.btnsig)
 
     
-    var urlIcon = 'shared/img/ui/' + rallyIndex[0] + '.svg'
+    var urlIcon = './shared/img/ui/' + rallyIndex[0] + '.svg'
 
     btnSig.on('click', () => {
         

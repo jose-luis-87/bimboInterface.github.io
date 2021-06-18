@@ -745,7 +745,7 @@ var TransformControlsGizmo = function () {
 
 	this.type = 'TransformControlsGizmo';
 
-	// shared materials
+	// ./shared materials
 
 	var gizmoMaterial = new MeshBasicMaterial( {
 		depthTest: false,

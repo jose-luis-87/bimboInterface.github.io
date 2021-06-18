@@ -6,7 +6,7 @@ function createCard(){
     misionSelect = JSON.parse(localStorage.getItem('misiones')) 
     
    $.each(misionSelect, function(i, mision){
-       var cardMIsion = '<div id="'+mision.id+'" class="cardMision animate__animated animate__backInRight"><div class="bulletMision"><div class="mision"><div class="txtMision"><p>'+mision.bullet+'</p></div><div class="iconMision"><img src="shared/img/ui/'+mision.id+'.svg" alt="'+mision.id+'"></div></div><img src="shared/img/ui/bullet-mision.svg" alt="bulletSvg"></div><div class="numberMision"><p>'+(i+1)+'</p><div id="number'+mision.id+'" class="numberFoot"><img src="shared/img/ui/number-unactive.svg" alt="unactive"></div></div></div>'
+       var cardMIsion = '<div id="'+mision.id+'" class="cardMision animate__animated animate__backInRight"><div class="bulletMision"><div class="mision"><div class="txtMision"><p>'+mision.bullet+'</p></div><div class="iconMision"><img src="./shared/img/ui/'+mision.id+'.svg" alt="'+mision.id+'"></div></div><img src="./shared/img/ui/bullet-mision.svg" alt="bulletSvg"></div><div class="numberMision"><p>'+(i+1)+'</p><div id="number'+mision.id+'" class="numberFoot"><img src="./shared/img/ui/number-unactive.svg" alt="unactive"></div></div></div>'
         $(cardMIsion).appendTo(".swipperMisiones")
        
    })
@@ -16,7 +16,7 @@ $(document).ready(function () {
     var rallyIndex = ''
     var rallyTotal = localStorage.getItem('rally')
     createCard()
-    var urlNumber = 'shared/img/ui/number-active.svg'
+    var urlNumber = './shared/img/ui/number-active.svg'
     $('#titleMisiones').text(LanObj.ui.misiones)
     $.each(missionatual, function(i, misionComplete){
         $('#number'+misionComplete+'>img').attr('src', urlNumber)

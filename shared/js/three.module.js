@@ -10918,7 +10918,7 @@ BufferGeometry.prototype = Object.assign( Object.create( EventDispatcher.prototy
 		this.boundingBox = null;
 		this.boundingSphere = null;
 
-		// used for storing cloned, shared data
+		// used for storing cloned, ./shared data
 
 		const data = {};
 
@@ -13369,7 +13369,7 @@ const ShaderChunk = {
 };
 
 /**
- * Uniforms library for shared webgl shaders
+ * Uniforms library for ./shared webgl shaders
  */
 
 const UniformsLib = {
@@ -35538,7 +35538,7 @@ Object.assign( KeyframeTrack.prototype, {
 	// (0,0,0,0,1,1,1,0,0,0,0,0,0,0) --> (0,0,1,1,0,0)
 	optimize: function () {
 
-		// times or values may be shared with other tracks, so overwriting is unsafe
+		// times or values may be ./shared with other tracks, so overwriting is unsafe
 		const times = AnimationUtils.arraySlice( this.times ),
 			values = AnimationUtils.arraySlice( this.values ),
 			stride = this.getValueSize(),
@@ -44602,7 +44602,7 @@ Object.assign( PropertyBinding.prototype, {
 
 /**
  *
- * A group of objects that receives a shared animation state.
+ * A group of objects that receives a ./shared animation state.
  *
  * Usage:
  *

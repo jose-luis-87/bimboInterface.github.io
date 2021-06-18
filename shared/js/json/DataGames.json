@@ -58,7 +58,7 @@
     "Games":{
         "Game1":{
             "Points":30,
-            "File":"shared/views/Game1.html",
+            "File":"./shared/views/Game1.html",
             "Levels":{
                 "1":{
                     "Time": 18,
@@ -70,7 +70,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/miniGameIcon1.svg"
+                            "Img": "./shared/img/game1/miniGameIcon1.svg"
                         },
                         "2": {
                             "Text":{
@@ -79,7 +79,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/miniGameIcon2.svg"
+                            "Img": "./shared/img/game1/miniGameIcon2.svg"
                         }
                     }
                 },
@@ -93,7 +93,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/Minijuego2/miniGame2Icon.svg"
+                            "Img": "./shared/img/game1/Minijuego2/miniGame2Icon.svg"
                         }
                     }
                 },
@@ -107,7 +107,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini3/instruction-1.svg"
+                            "Img": "./shared/img/game1/mini3/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -116,7 +116,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini3/instruction-2.svg"
+                            "Img": "./shared/img/game1/mini3/instruction-2.svg"
                         }
                     }
                 },
@@ -130,7 +130,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini4/instruction-1.svg"
+                            "Img": "./shared/img/game1/mini4/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -139,7 +139,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini4/instruction-2.svg"
+                            "Img": "./shared/img/game1/mini4/instruction-2.svg"
                         }
                     }
                 },
@@ -153,7 +153,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini5/instruction-1.svg"
+                            "Img": "./shared/img/game1/mini5/instruction-1.svg"
                         }
                     }
                 },
@@ -167,7 +167,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini6/instructions-mini6-1.svg"
+                            "Img": "./shared/img/game1/mini6/instructions-mini6-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -176,7 +176,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini6/instructions-mini6-2.svg"
+                            "Img": "./shared/img/game1/mini6/instructions-mini6-2.svg"
                         }
                     }
                 },
@@ -190,7 +190,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game1/mini7/mini7Icon.svg"
+                            "Img": "./shared/img/game1/mini7/mini7Icon.svg"
                         }
                     }
                 }
@@ -199,7 +199,7 @@
         },
         "Game2":{
             "Points":12,
-            "File":"shared/views/Game2.html",
+            "File":"./shared/views/Game2.html",
             "Levels":{
                 "1":{
                     "Time": 12,
@@ -211,7 +211,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game2/instruction-1.svg"
+                            "Img": "./shared/img/game2/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -220,7 +220,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game2/instruction-2.svg"
+                            "Img": "./shared/img/game2/instruction-2.svg"
                         }
                     }
                 }
@@ -228,7 +228,7 @@
         },
         "Game3":{
             "Points":12,
-            "File":"shared/views/Game3.html",
+            "File":"./shared/views/Game3.html",
             "Levels":{
                 "1":{
                     "Time": 18,
@@ -240,7 +240,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game3/instruction-1.svg"
+                            "Img": "./shared/img/game3/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -249,7 +249,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game3/instruction-2.svg"
+                            "Img": "./shared/img/game3/instruction-2.svg"
                         }
                     }
                 }
@@ -257,7 +257,7 @@
         },        
         "Game4":{
             "Points":14,
-            "File":"shared/views/Game4.html",
+            "File":"./shared/views/Game4.html",
             "Levels":{
                 "1":{
                     "Time": 15,
@@ -269,7 +269,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game4/instruction-1.svg"
+                            "Img": "./shared/img/game4/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -278,7 +278,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game4/instruction-2.svg"
+                            "Img": "./shared/img/game4/instruction-2.svg"
                         }
                     }
                 }
@@ -286,7 +286,7 @@
         },
         "Game5":{
             "Points":12,
-            "File":"shared/views/Game5.html",
+            "File":"./shared/views/Game5.html",
             "Levels":{
                 "1":{
                     "Time": 12,
@@ -298,7 +298,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game5/instruction-1.svg"
+                            "Img": "./shared/img/game5/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -307,7 +307,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game5/instruction-2.svg"
+                            "Img": "./shared/img/game5/instruction-2.svg"
                         }
                     }
                 }
@@ -315,7 +315,7 @@
         },
         "Game6":{
             "Points":12,
-            "File":"shared/views/Game6.html",
+            "File":"./shared/views/Game6.html",
             "Levels":{
                 "1":{
                     "Time": 28,
@@ -327,7 +327,7 @@
                                 "fr": "",
                                 "pt": ""
                             },                        
-                            "Img": "shared/img/game6/instruction-1.svg"
+                            "Img": "./shared/img/game6/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -336,7 +336,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game6/instruction-2.svg"
+                            "Img": "./shared/img/game6/instruction-2.svg"
                         }
                     }
                 }
@@ -344,7 +344,7 @@
         },
         "Game7":{
             "Points":12,
-            "File":"shared/views/Game7.html",
+            "File":"./shared/views/Game7.html",
             "Levels":{
                 "1":{
                     "Time": 10,
@@ -356,7 +356,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game7/instruction-1.svg"
+                            "Img": "./shared/img/game7/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -365,7 +365,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game7/instruction-2.svg"
+                            "Img": "./shared/img/game7/instruction-2.svg"
                         }
                     }
                 }
@@ -373,7 +373,7 @@
         },
         "Game8":{
             "Points":12,
-            "File":"shared/views/Game8.html",
+            "File":"./shared/views/Game8.html",
             "Levels":{
                 "1":{
                     "Time": 35,
@@ -385,7 +385,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game8/instruction-1.svg"
+                            "Img": "./shared/img/game8/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -394,7 +394,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game8/instruction-2.svg"
+                            "Img": "./shared/img/game8/instruction-2.svg"
                         }
                     }
                 }
@@ -402,7 +402,7 @@
         },
         "Game9":{
             "Points":12,        
-            "File":"shared/views/Game9.html",
+            "File":"./shared/views/Game9.html",
             "Levels":{
                 "1":{
                     "Time": 8,
@@ -414,7 +414,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game9/instruction-1.svg"
+                            "Img": "./shared/img/game9/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -423,7 +423,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game9/instruction-2.svg"
+                            "Img": "./shared/img/game9/instruction-2.svg"
                         }
                     }
                 }
@@ -431,7 +431,7 @@
         },
         "Game10":{
             "Points":12,
-            "File":"shared/views/Game10.html",
+            "File":"./shared/views/Game10.html",
             "Levels":{
                 "1":{
                     "Time": 12,
@@ -443,7 +443,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game10/instruction-1.svg"
+                            "Img": "./shared/img/game10/instruction-1.svg"
                         },
                         "2": {
                             "Text":{
@@ -452,7 +452,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game10/instruction-2.svg"
+                            "Img": "./shared/img/game10/instruction-2.svg"
                         }
                     }
                 }
@@ -460,7 +460,7 @@
         },
         "Game11":{
             "Points":12,        
-            "File":"shared/views/Game11.html",
+            "File":"./shared/views/Game11.html",
             "Levels":{
                 "1":{
                     "Time": 17,
@@ -472,7 +472,7 @@
                                 "fr": "",
                                 "pt": ""
                             },
-                            "Img": "shared/img/game11/instruction-1.svg"
+                            "Img": "./shared/img/game11/instruction-1.svg"
                         }
                     }
                 }
@@ -481,19 +481,19 @@
     },
     "Sounds":{
         "Ambient":{
-            "src":"shared/audio/ambient.mp3",
+            "src":"./shared/audio/ambient.mp3",
             "volume": 0.5,
             "loop": true,
             "autoplay": true
         },
         "Win":{
-            "src":"shared/audio/correcto_4.mp3",
+            "src":"./shared/audio/correcto_4.mp3",
             "volume": 1,
             "loop": false,
             "autoplay": false
         },
         "Lose":{
-            "src":"shared/audio/incorrecto_5.mp3",
+            "src":"./shared/audio/incorrecto_5.mp3",
             "volume": 1,
             "loop": false,
             "autoplay": false

@@ -8539,7 +8539,7 @@
 			this.morphAttributes = {};
 			this.groups = [];
 			this.boundingBox = null;
-			this.boundingSphere = null; // used for storing cloned, shared data
+			this.boundingSphere = null; // used for storing cloned, ./shared data
 
 			var data = {}; // name
 
@@ -10504,7 +10504,7 @@
 	};
 
 	/**
-	 * Uniforms library for shared webgl shaders
+	 * Uniforms library for ./shared webgl shaders
 	 */
 
 	var UniformsLib = {
@@ -26659,7 +26659,7 @@
 		// removes equivalent sequential keys as common in morph target sequences
 		// (0,0,0,0,1,1,1,0,0,0,0,0,0,0) --> (0,0,1,1,0,0)
 		optimize: function optimize() {
-			// times or values may be shared with other tracks, so overwriting is unsafe
+			// times or values may be ./shared with other tracks, so overwriting is unsafe
 			var times = AnimationUtils.arraySlice(this.times),
 					values = AnimationUtils.arraySlice(this.values),
 					stride = this.getValueSize(),
@@ -32897,7 +32897,7 @@
 
 	/**
 	 *
-	 * A group of objects that receives a shared animation state.
+	 * A group of objects that receives a ./shared animation state.
 	 *
 	 * Usage:
 	 *

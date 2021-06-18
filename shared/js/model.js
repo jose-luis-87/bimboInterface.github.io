@@ -438,7 +438,7 @@ function crearObjetoInvisible(grupoEscenaX, mision)
 function crearBtnCambioEscena(grupoEscenaX)
 {
     let geometry = new THREE.PlaneGeometry(1, 1, 1);
-    let material = new THREE.MeshBasicMaterial({ transparent: true, map: new THREE.TextureLoader().load("shared/img/modelo/Imagenes/siguiente.png"), side: THREE.DoubleSide });
+    let material = new THREE.MeshBasicMaterial({ transparent: true, map: new THREE.TextureLoader().load("./shared/img/modelo/Imagenes/siguiente.png"), side: THREE.DoubleSide });
     let mesh = new THREE.Mesh(geometry, material);
     mesh.scale.set(.3, .3, .3)
     mesh.position.set(-3, 0, 1.2);
@@ -494,19 +494,19 @@ function CargarMision(missionName) {
 }
 function CargarTexturaSkybox()
 {
-    escenas.foto1.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto1.nombre, ()=>
+    escenas.foto1.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto1.nombre, ()=>
     {
         rt = new THREE.WebGLCubeRenderTarget(escenas.foto1.img.image.width);
         CambiarFotoSkybox(escenas.foto1);
         rotarCamara(7)
         EstablecerObjetosEscena(escenas.foto1.nombre);
     });
-   escenas.foto2.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto2.nombre);
-   escenas.foto3.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto3.nombre);
-   escenas.foto4.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto4.nombre);
-   escenas.foto5.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto5.nombre);
-   escenas.foto6.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto6.nombre);
-   escenas.foto7.img = new THREE.TextureLoader().load('shared/img/modelo/Imagenes/Tienda360/' + escenas.foto7.nombre);
+   escenas.foto2.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto2.nombre);
+   escenas.foto3.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto3.nombre);
+   escenas.foto4.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto4.nombre);
+   escenas.foto5.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto5.nombre);
+   escenas.foto6.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto6.nombre);
+   escenas.foto7.img = new THREE.TextureLoader().load('./shared/img/modelo/Imagenes/Tienda360/' + escenas.foto7.nombre);
 }
 function CargarEscena(escena_foto,gradosRotar)
 {
@@ -634,7 +634,7 @@ function AnimacionAparecer(_mesh, habilitarGiro = false) {
     
     setTimeout(()=>{
         $("#games").fadeIn()
-        $("#games").load('./shared/views/games.html');
+        $("#games").load('././shared/views/games.html');
         //desactivar mision
         SinMision();
     }, 3000)
@@ -672,7 +672,7 @@ function AnimacionAparecer(_mesh, habilitarGiro = false) {
 function cargarPlatano()
 {
     let platano3d = new FBXLoader();
-    platano3d.load('shared/img/modelo/Fbx/platano_richi.fbx', fbx => {
+    platano3d.load('./shared/img/modelo/Fbx/platano_richi.fbx', fbx => {
         fbx.scale.set(.001,.001,.001)
         let _platano = fbx.children[0];
         _platano.position.set(2, 0, 2);
@@ -692,7 +692,7 @@ function cargarPlatano()
 }
 function cargarRefresco() {
     let refresco3d = new FBXLoader();
-    refresco3d.load('shared/img/modelo/Fbx/refresco_1.fbx', fbx => {
+    refresco3d.load('./shared/img/modelo/Fbx/refresco_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _refresco = fbx.children[0];
         //console.log(_refresco)
@@ -714,7 +714,7 @@ function cargarRefresco() {
 }
 function cargarPinia() {
     let pinia3d = new FBXLoader();
-    pinia3d.load('shared/img/modelo/Fbx/pina_1.fbx', fbx => {
+    pinia3d.load('./shared/img/modelo/Fbx/pina_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _pinia = fbx.children[0];
         _pinia.position.set(-2.3, 1.2, -4);
@@ -738,7 +738,7 @@ function cargarPinia() {
 }
 function cargarParaguas() {
     let paraguas3d = new FBXLoader();
-    paraguas3d.load('shared/img/modelo/Fbx/paraguas_1.fbx', fbx => {
+    paraguas3d.load('./shared/img/modelo/Fbx/paraguas_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _paraguas = fbx.children[0];
         _paraguas.position.set(0.5, -2, 2.7);
@@ -763,13 +763,13 @@ function cargarParaguas() {
 }
 function cargarManchaPiso() {
     let manchapiso3d = new FBXLoader();
-    manchapiso3d.load('shared/img/modelo/Fbx/mancha_piso_1.fbx', fbx => {
+    manchapiso3d.load('./shared/img/modelo/Fbx/mancha_piso_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _manchapiso = fbx.children[0];
         _manchapiso.position.set(-0.3, -2, 0.8);
         _manchapiso.material = new THREE.MeshBasicMaterial({ map: _manchapiso.material.map });
         //carga alpha
-        let alphaMap = new THREE.TextureLoader().load('shared/img/modelo/Fbx/alphaMancha.png');
+        let alphaMap = new THREE.TextureLoader().load('./shared/img/modelo/Fbx/alphaMancha.png');
         _manchapiso.material.transparent = true
         _manchapiso.material.alphaMap = alphaMap
         _manchapiso.material.alphaMap.magFilter = THREE.NearestFilter
@@ -791,7 +791,7 @@ function cargarManchaPiso() {
 }
 function cargarManzana() {
     let manzana3d = new FBXLoader();
-    manzana3d.load('shared/img/modelo/Fbx/manzana_1.fbx', fbx => {
+    manzana3d.load('./shared/img/modelo/Fbx/manzana_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _manzana = fbx.children[0];
         _manzana.position.set(3, -1.5, 0.3);
@@ -810,7 +810,7 @@ function cargarManzana() {
 }
 function cargarGlobo() {
     let globo3d = new FBXLoader();
-    globo3d.load('shared/img/modelo/Fbx/globo_1.fbx', fbx => {
+    globo3d.load('./shared/img/modelo/Fbx/globo_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _globo = fbx.children[0];
         //console.log(_globo)
@@ -829,7 +829,7 @@ function cargarGlobo() {
 }
 function cargarMaterialVenta() {
     let materialVenta3d = new FBXLoader();
-    materialVenta3d.load('shared/img/modelo/Fbx/anuncio_1.fbx', fbx => {
+    materialVenta3d.load('./shared/img/modelo/Fbx/anuncio_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _materialVenta = fbx.children[0];
         _materialVenta.position.set(-0.1, -1.4, 2.5);
@@ -847,7 +847,7 @@ function cargarMaterialVenta() {
 }
 function cargarPuertaRefri() {
     let puertaRefri3d = new FBXLoader();
-    puertaRefri3d.load('shared/img/modelo/Fbx/manija.fbx', fbx => {
+    puertaRefri3d.load('./shared/img/modelo/Fbx/manija.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _puertaRefri = fbx.children[0];
         _puertaRefri.position.set(2.1, -1.8, -2.5);
@@ -869,7 +869,7 @@ function cargarPuertaRefri() {
 
 function cargarLampara() {
     let lampara3d = new FBXLoader();
-    lampara3d.load('shared/img/modelo/Fbx/foco_1.fbx', fbx => {
+    lampara3d.load('./shared/img/modelo/Fbx/foco_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _lampara = fbx.children[0];
         //console.log(_lampara.material)
@@ -891,7 +891,7 @@ function cargarLampara() {
 }
 function cargarDonitas() {
     let donitas3d = new FBXLoader();
-    donitas3d.load('shared/img/modelo/Fbx/donitas_1.fbx', fbx => {
+    donitas3d.load('./shared/img/modelo/Fbx/donitas_1.fbx', fbx => {
         fbx.scale.set(.001, .001, .001)
         let _donitas = fbx.children[0];
         //console.log(_donitas)

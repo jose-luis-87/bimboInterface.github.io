@@ -975,7 +975,7 @@ var FBXLoader = ( function () {
 
 							skeleton.bones[ i ] = bone;
 
-							// In cases where a bone is shared between multiple meshes
+							// In cases where a bone is ./shared between multiple meshes
 							// duplicate the bone here and and it as a child of the first bone
 							if ( subBone !== null ) {
 
@@ -1495,7 +1495,7 @@ var FBXLoader = ( function () {
 			var matUuid = material.uuid;
 
 			// if a geometry has morph targets, it cannot share the material with other geometries
-			var sharedMat = false;
+			var ./sharedMat = false;
 
 			sceneGraph.traverse( function ( node ) {
 
@@ -1505,17 +1505,17 @@ var FBXLoader = ( function () {
 
 						node.material.forEach( function ( mat ) {
 
-							if ( mat.uuid === matUuid && node.uuid !== uuid ) sharedMat = true;
+							if ( mat.uuid === matUuid && node.uuid !== uuid ) ./sharedMat = true;
 
 						} );
 
-					} else if ( node.material.uuid === matUuid && node.uuid !== uuid ) sharedMat = true;
+					} else if ( node.material.uuid === matUuid && node.uuid !== uuid ) ./sharedMat = true;
 
 				}
 
 			} );
 
-			if ( sharedMat === true ) {
+			if ( ./sharedMat === true ) {
 
 				var clonedMat = material.clone();
 				clonedMat.morphTargets = true;

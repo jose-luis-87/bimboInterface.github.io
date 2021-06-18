@@ -1,4 +1,4 @@
-var data = '{"productos":[{"number":14,"url":"shared/img/game5/pan1_good.svg","deg":"0","tipo":"1"},{"number":13,"url":"shared/img/game5/pan2_good.svg","deg":"0","tipo":"2"}]}';
+var data = '{"productos":[{"number":14,"url":"./shared/img/game5/pan1_good.svg","deg":"0","tipo":"1"},{"number":13,"url":"./shared/img/game5/pan2_good.svg","deg":"0","tipo":"2"}]}';
 
 var interval = null;
 var PointsToWin = 0;

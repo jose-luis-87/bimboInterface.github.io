@@ -231,7 +231,7 @@ function initmini3() {
     let _imgs = ["GloboV.svg", "GloboP.svg", "GloboB.svg", "GloboN.svg"]
 
     $.each(_imgs, function (i, val) {
-        let _globo = '<div class="globo"><img src="shared/img/game1/mini3/' + val + '" alt="globo"/></div>';
+        let _globo = '<div class="globo"><img src="./shared/img/game1/mini3/' + val + '" alt="globo"/></div>';
         $(_globo).appendTo(".wrapperGlobos");
     });
 
@@ -286,7 +286,7 @@ function initmini4() {
     let _imgs = ["GloboV.svg", "GloboP.svg", "GloboB.svg", "GloboN.svg"]
 
     $.each(_imgs, function (i, val) {
-        let _globo = '<div class="globoDrag  globoDrag' + (i + 1) + '"><img src="shared/img/game1/mini4/' + val + '" alt="globo"/><div class="helperline"></div></div>';
+        let _globo = '<div class="globoDrag  globoDrag' + (i + 1) + '"><img src="./shared/img/game1/mini4/' + val + '" alt="globo"/><div class="helperline"></div></div>';
         $(_globo).appendTo("#mini4");
     });
 
@@ -475,7 +475,7 @@ function initmini5() {
     let _imgs = ["GloboV.svg", "GloboP.svg", "GloboB.svg", "GloboN.svg"]
 
     $.each(_imgs, function (i, val) {
-        let _globo = '<div class="globoDrag  globoDrag' + (i + 1) + '"><img src="shared/img/game1/mini4/' + val + '" alt="globo"/><div class="lineMini5"><svg id="lineProv"><line x1="50%" y1="0" x2="50%" y2="60%"></line></svg></div></div>';
+        let _globo = '<div class="globoDrag  globoDrag' + (i + 1) + '"><img src="./shared/img/game1/mini4/' + val + '" alt="globo"/><div class="lineMini5"><svg id="lineProv"><line x1="50%" y1="0" x2="50%" y2="60%"></line></svg></div></div>';
         $(_globo).appendTo("#mini5");
     });
     for (let i = 0; i < 4; i++) {
@@ -537,7 +537,7 @@ function initDraggMini5() {
         drag: function (event, ui) {
             var _end = $(event.target).parent().position();
             var end = $(event.target).position();
-            $(this).css("background-image","url('shared/img/game1/mini5/mano.svg')");
+            $(this).css("background-image","url('./shared/img/game1/mini5/mano.svg')");
             $($(this).children()[0]).hide();
             let _left = $(event.target)[0].getBoundingClientRect().width / 2 + $(event.target).position().left;
             let _top = $(event.target)[0].getBoundingClientRect().height / 2 + $(event.target).position().top - 1;
