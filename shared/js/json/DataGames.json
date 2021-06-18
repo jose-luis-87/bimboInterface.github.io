@@ -1,0 +1,502 @@
+{
+    "TextsUI":{
+        "TextTimesUp":{
+            "es": "Se ha terminado tu tiempo",
+            "en": "times up",
+            "fr": "",
+            "pt": ""
+        },
+        "TextLoseLives":{
+            "es": "Has perdido una vida",
+            "en": "Lose live",
+            "fr": "",
+            "pt": ""
+        },
+        "TextLivesD":{
+            "es": "Vidas disponibles",
+            "en": "test",
+            "fr": "",
+            "pt": ""
+        },
+        "TextbtnTimesUp":{
+            "es": "Intentar de nuevo",
+            "en": "test",
+            "fr": "",
+            "pt": ""
+        },
+        "TextGameOver":{
+            "es": "Se han terminado tus vidas",
+            "en": "test",
+            "fr": "",
+            "pt": ""
+        },
+        "TextbtnGameOver":{
+            "es": "Intentar de nuevo",
+            "en": "test",
+            "fr": "",
+            "pt": ""
+        },
+        "TextWin":{
+            "es": "¡Pasaste la misión y ganaste <span class='pntGanados'>1 punto</span> y una <span>recompensa</span>!",
+            "en": "test",
+            "fr": "",
+            "pt": ""
+        },
+        "TextPrize":{
+            "es": "PREMIO",
+            "en": "test",
+            "fr": "",
+            "pt": ""
+        },
+        "TextTimeInstruction":{
+            "es": "Tienes <span></span> segundos para ganar el juego.",
+            "en": "<span></span>",
+            "fr": "",
+            "pt": ""
+        }
+    },
+    "Games":{
+        "Game1":{
+            "Points":30,
+            "File":"shared/views/Game1.html",
+            "Levels":{
+                "1":{
+                    "Time": 18,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Has clic en cada cubo para girarlo y que todas las filas tengan el mismo producto",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/miniGameIcon1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Has clic en cada cubo para girarlo y que todas las filas tengan el mismo producto",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/miniGameIcon2.svg"
+                        }
+                    }
+                },
+                "2":{
+                    "Time": 8,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Arrastra el producto hacía abajo para colocarlo en su sitio sin tocar los demás.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/Minijuego2/miniGame2Icon.svg"
+                        }
+                    }
+                },
+                "3":{
+                    "Time": 12,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Presiona repetidas veces el globo hasta inflarlo por completo.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini3/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Infla los globos para adornar el exhibidor.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini3/instruction-2.svg"
+                        }
+                    }
+                },
+                "4":{
+                    "Time": 10,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Agrega un cordón a los globos que usarás para decorar tu exhibidor.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini4/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Presiona y sostén cada globo, después arrastralo hacía la mano para agregar el cordón.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini4/instruction-2.svg"
+                        }
+                    }
+                },
+                "5":{
+                    "Time": 8,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Coloca los globos en tu exihibición Wow arrastrandólos hacía el exihibidor.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini5/instruction-1.svg"
+                        }
+                    }
+                },
+                "6":{
+                    "Time": 10,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Oprime el bóton para hacer girar la máquina.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini6/instructions-mini6-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Haz una fila de productos iguales para llenar los estantes del exhibidor.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini6/instructions-mini6-2.svg"
+                        }
+                    }
+                },
+                "7":{
+                    "Time": 12,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "El exhibidor necesita un limpieza, presiona y desliza para limpiar.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game1/mini7/mini7Icon.svg"
+                        }
+                    }
+                }
+            }
+            
+        },
+        "Game2":{
+            "Points":12,
+            "File":"shared/views/Game2.html",
+            "Levels":{
+                "1":{
+                    "Time": 12,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Haz clic sobre las promociones para obtener más información de cada una.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game2/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Da clic en Aceptar para elegir la opción de Venta Sugerida más conveniente.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game2/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game3":{
+            "Points":12,
+            "File":"shared/views/Game3.html",
+            "Levels":{
+                "1":{
+                    "Time": 18,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Una de las tiras de precios esta fuera de su lugar. ¡Ayúdanosa acomodarla!",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game3/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Justo cuando la tira pase por encima del espacio vacio, da clic para ponerla en su sitio.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game3/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },        
+        "Game4":{
+            "Points":14,
+            "File":"shared/views/Game4.html",
+            "Levels":{
+                "1":{
+                    "Time": 15,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "¡Oh no! ¡Alguien a desacomodado, los productos del rack! ¡Acomódalos en el lugar correcto!",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game4/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Selecciona el producto que quieras cambiar dándole clic y manténlo presionado. Arrástralo y suéltalo en el lugar que consideres indicado.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game4/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game5":{
+            "Points":12,
+            "File":"shared/views/Game5.html",
+            "Levels":{
+                "1":{
+                    "Time": 12,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Los productos del rack se encuentran mal orientados. Ayúdanos a presentarlos de manera correcta al cliente.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game5/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Da clic en los productos para cambiar su orientación.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game5/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game6":{
+            "Points":12,
+            "File":"shared/views/Game6.html",
+            "Levels":{
+                "1":{
+                    "Time": 28,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es":"Productos iran bajando en el contenedor izquierdo, sin embargo bajaran desordenados. Da clic sobre ellos para rotarlos antes de que toquen los recuadros blancos.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },                        
+                            "Img": "shared/img/game6/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es":"Ordena de manera correcta una fila de 6 productos para ir llenando el rack de la derecha.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game6/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game7":{
+            "Points":12,
+            "File":"shared/views/Game7.html",
+            "Levels":{
+                "1":{
+                    "Time": 10,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Da clic y mantén presionadas las imagenes dentro del contenedor de tu lado derecho. Arrastrálas y suéltalas en los recuadros transparentes...",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game7/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "...a un lado de la imagen, que tu pienses que se correspondan mejor.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game7/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game8":{
+            "Points":12,
+            "File":"shared/views/Game8.html",
+            "Levels":{
+                "1":{
+                    "Time": 35,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Coloca las tiras adicionales presionándolas y arrastrándolas en los costados del exhibidor.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game8/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "El exhibidor cambiará de posición cada cierto tiempo, aprovecha para surtir ambos costados.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game8/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game9":{
+            "Points":12,        
+            "File":"shared/views/Game9.html",
+            "Levels":{
+                "1":{
+                    "Time": 8,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Pon mucha atención al flujo de los compradores y detecta las zonas con mayor aglomeración.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game9/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Mantén presionado el exihibidor y arrastrálo al recuadro naranja más cercano a la aglomeración.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game9/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game10":{
+            "Points":12,
+            "File":"shared/views/Game10.html",
+            "Levels":{
+                "1":{
+                    "Time": 12,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Ayudanos a mostrar al comprador el lado del exhibidor que induzca de una mejor manera los productos GB",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game10/instruction-1.svg"
+                        },
+                        "2": {
+                            "Text":{
+                                "es": "Da clic en el exhibidor para rotarlo hasta presentarlo de manera correcta.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game10/instruction-2.svg"
+                        }
+                    }
+                }
+            }
+        },
+        "Game11":{
+            "Points":12,        
+            "File":"shared/views/Game11.html",
+            "Levels":{
+                "1":{
+                    "Time": 17,
+                    "Instructions":{
+                        "1": {
+                            "Text":{
+                                "es": "Da clic, mantén presionado y arrastra el icono del personaje al exhibidor que mejor se ajustea su temporada o tendencia.",
+                                "en": "",
+                                "fr": "",
+                                "pt": ""
+                            },
+                            "Img": "shared/img/game11/instruction-1.svg"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Sounds":{
+        "Ambient":{
+            "src":"shared/audio/ambient.mp3",
+            "volume": 0.5,
+            "loop": true,
+            "autoplay": true
+        },
+        "Win":{
+            "src":"shared/audio/correcto_4.mp3",
+            "volume": 1,
+            "loop": false,
+            "autoplay": false
+        },
+        "Lose":{
+            "src":"shared/audio/incorrecto_5.mp3",
+            "volume": 1,
+            "loop": false,
+            "autoplay": false
+        }
+    }
+}
